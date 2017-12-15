@@ -21,5 +21,9 @@ public class LRUCache {
 		return "";
 	}
 	
+	public void populateCache(Map<String,String> map) {
+		
+	}
+	
 	
 }
