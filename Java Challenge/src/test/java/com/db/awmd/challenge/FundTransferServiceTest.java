@@ -25,14 +25,12 @@ public class FundTransferServiceTest {
 	
 	@Test
 	public void fundTransfer() throws Exception {
-		Account fromAccount = new Account("Id-789");
-		fromAccount.setBalance(new BigDecimal(2000));
+		Account fromAccount = new Account("Id-789",new BigDecimal(2000));
 	    this.accountsService.createAccount(fromAccount);
 
 	    assertThat(this.accountsService.getAccount("Id-789")).isEqualTo(fromAccount);
 	    
-		Account toAccount = new Account("Id-456");
-		toAccount.setBalance(new BigDecimal(2000));
+		Account toAccount = new Account("Id-456",new BigDecimal(2000));
 	    this.accountsService.createAccount(toAccount);
 
 	    assertThat(this.accountsService.getAccount("Id-456")).isEqualTo(toAccount);

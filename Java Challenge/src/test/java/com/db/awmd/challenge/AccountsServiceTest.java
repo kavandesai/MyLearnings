@@ -22,8 +22,7 @@ public class AccountsServiceTest {
 
   @Test
   public void addAccount() throws Exception {
-    Account account = new Account("Id-123");
-    account.setBalance(new BigDecimal(1000));
+    Account account = new Account("Id-123",new BigDecimal(1000));
     this.accountsService.createAccount(account);
 
     assertThat(this.accountsService.getAccount("Id-123")).isEqualTo(account);
