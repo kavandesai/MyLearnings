@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-class smallestMissingNumber {
+class SmallestMissingNumber {
     public int firstMissingPositive(int[] nums) {
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         int smallestMissingNumber = 1;
@@ -28,7 +28,7 @@ class smallestMissingNumber {
     }
 
     public static void main(String[] args) {
-        smallestMissingNumber s = new smallestMissingNumber();
+        SmallestMissingNumber s = new SmallestMissingNumber();
         Scanner scan = new Scanner(System.in);
         System.out.print("nums = [");
         String input = scan.next();
