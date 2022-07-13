@@ -3,7 +3,7 @@ package com.algo.learning;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
-
+// Leetcode 895
 public class FreqStack {
     private int maxFreq;
     private Map<Integer,Integer> elementToFreqMap;
